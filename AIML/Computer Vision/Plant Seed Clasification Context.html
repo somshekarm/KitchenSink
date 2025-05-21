@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; background-color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000; background-color: #ffffff}
+    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {background-color: #ffffff; -webkit-text-stroke: 0px #000000}
+    span.s3 {font-kerning: none; background-color: #ffffff}
+    ul.ul1 {list-style-type: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>Background and Context</b><b></b></span></p>
+<p class="p1"><span class="s1">In recent times, the field of agriculture has been in urgent need of modernizing, since the amount of manual work people need to put in to check if plants are growing correctly is still highly extensive. Despite several advances in agricultural technology, people working in the agricultural industry still need to have the ability to sort and recognize different plants and weeds, which takes a lot of time and effort in the long term.</span></p>
+<p class="p1"><span class="s1">The potential is ripe for this trillion-dollar industry to be greatly impacted by technological innovations that cut down on the requirement for manual labor, and this is where Artificial Intelligence can benefit the workers in this field, <i>as the time and energy required to identify plant seedlings will be greatly shortened by the use of AI and Deep Learning</i>. The ability to do so far more efficiently and even more effectively than experienced manual labor could lead to better crop yields, the freeing up of human involvement for higher-order agricultural decision making, and in the long term will result in more sustainable environmental practices in agriculture as well.</span></p>
+<p class="p1"><span class="s1"><b>Objective</b><b></b></span></p>
+<p class="p1"><span class="s1">The Aarhus University Signal Processing group, in collaboration with the University of Southern Denmark, has provided the data containing images of unique plants belonging to 12 different species. You being a data scientist, need to build a Convolutional Neural Network model which would classify the plant seedlings into their respective 12 categories.</span></p>
+<p class="p1"><span class="s1"><b>Data Description</b><b></b></span></p>
+<p class="p2"><span class="s1">This dataset contains images of unique plants belonging to 12 different species.</span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s2"></span><span class="s3">The data file names are:</span></li>
+  <ul class="ul1">
+    <li class="li3"><span class="s2"></span><span class="s3">images.npy</span></li>
+    <li class="li3"><span class="s2"></span><span class="s3">Labels.csv</span></li>
+  </ul>
+  <li class="li3"><span class="s2"></span><span class="s3">Due to the large volume of data, the images were converted to numpy arrays and stored in images.npy file and the corresponding labels are also put into Labels.csv so that you can work on the data/project seamlessly without having to worry about the high data volume.</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">The goal of the project is to create a classifier capable of determining a plant's species from an image.</span></li>
+</ul>
+<p class="p4"><span class="s3"><b>List of Plant species</b><b></b></span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s2"></span><span class="s3">Black-grass</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Charlock</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Cleavers</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Common Chickweed</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Common Wheat</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Fat Hen</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Loose Silky-bent</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Maize</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Scentless Mayweed</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Shepherds Purse</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Small-flowered Cranesbill</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Sugar beet</span></li>
+</ul>
+<p class="p4"><span class="s3"><b>Guide to solve the project seamlessly</b><b></b></span></p>
+<p class="p4"><span class="s3">Here are the points which will help you to solve the problem efficiently:</span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s2"></span><span class="s3">Read the problem statement carefully </span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Download the dataset from the Olympus platform.</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">Upload the "images.npy" and “Labels.csv” files to google drive.</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">You can set runtime type to “GPU” in Google Colab so that the code will run faster as you will be using CNN to fit your model.</span></li>
+</ul>
+<p class="p4"><span class="s3"><b>Best Practices for Notebook : </b><b></b></span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s2"></span><span class="s3">The notebook should be well-documented, with inline comments explaining the functionality of code and markdown cells containing comments on the observations and insights.</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">The notebook should be run from start to finish in a sequential manner before submission.</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">It is preferable to remove all warnings and errors before submission.</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">The notebook should be submitted as an HTML file (.html) and NOT as a notebook file (.ipynb)</span></li>
+</ul>
+</body>
+</html>
