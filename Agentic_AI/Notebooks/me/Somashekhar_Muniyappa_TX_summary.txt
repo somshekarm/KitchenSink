@@ -1,0 +1,9 @@
+Dynamic and results-driven Solution Architect in bridging business strategy with technical execution across Fortune 500 companies. Specialized in driving enterprise cloud transformations, microservices architecture, digital modernization, and high-scale system design. Proven leader in aligning with PMO governance processes while maintaining agile delivery velocity.
+Expertise in AWS and Azure platforms, API management, microservices decomposition, SaaS solutions, and Agile/SAFe methodologies. Adept at building scalable, resilient, and future-ready architectures that support business growth and innovation.
+Passionate about delivering high-quality solutions, mentoring cross-functional teams, and accelerating digital transformation initiatives.
+
+Certifications:
+    AWS Certified Solutions Architect – Professional
+    TOGAF Certified Enterprise Architect
+
+Always eager to connect and collaborate on solving complex architectural challenges!
