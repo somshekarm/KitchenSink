@@ -1,3 +1,4 @@
 uv.lock
 settings.json
 Notebooks/no_checkin*
+.env
