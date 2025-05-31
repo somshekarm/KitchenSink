@@ -1,0 +1,6 @@
+The C# code to reverse integers in the array, while handling 32-bit signed integer overflow, is provided above. Below is the simplified representation of how the code works along with its expected output when given the input array [984569847569832475, -2345243, 472375, 0, 10, -1]: 
+
+Input: [984569847569832475, -2345243, 472375, 0, 10, -1]
+Output: [0, -3425243, 573274, 0, 1, -1]
+
+This should be saved in a text file as per the assignment requirements.

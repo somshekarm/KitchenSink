@@ -1,0 +1,7 @@
+coding_task:
+  description: >
+    write C# code to achive this: {assignment}
+  expected_output: >
+    a text file to include the code itself and the output of the code and also input provided.
+  agent: coder
+  output_file: output/code_and_output.txt
