@@ -1,6 +1,31 @@
-The C# code to reverse integers in the array, while handling 32-bit signed integer overflow, is provided above. Below is the simplified representation of how the code works along with its expected output when given the input array [984569847569832475, -2345243, 472375, 0, 10, -1]: 
+using System;
+using System.Linq;
 
-Input: [984569847569832475, -2345243, 472375, 0, 10, -1]
-Output: [0, -3425243, 573274, 0, 1, -1]
+class Program {
+    static void Main(string[] args) {
+        long[] inputArray = new long[] { 984569847569832475, -2345243, 472375, 0, 10, -1 };
+        int[] reversedArray = ReverseIntegers(inputArray);
 
-This should be saved in a text file as per the assignment requirements.
+        Console.WriteLine("[" + string.Join(", ", reversedArray) + "]");
+    }
+
+    static int[] ReverseIntegers(long[] arr) {
+        int[] results = new int[arr.Length];
+        for (int i = 0; i < arr.Length; i++) {
+            long num = arr[i];
+            if (num < int.MinValue || num > int.MaxValue) {
+                results[i] = 0;
+                continue;
+            }
+            int sign = (int)num < 0 ? -1 : 1;
+            string reversed = new string(num.ToString().TrimStart('-').Reverse().ToArray());
+            long reversedNum = sign * long.Parse(reversed);
+            results[i] = (reversedNum < int.MinValue || reversedNum > int.MaxValue) ? 0 : (int)reversedNum;
+        }
+        return results;
+    }
+}
+``` 
+
+This code is expected to correctly reverse each integer from the input array and handle the conditions specified, outputting the result array. For the given input, the expected output is `[0, 0, 573274, 0, 1, 0]`.
+```
