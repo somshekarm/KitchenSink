@@ -6,8 +6,8 @@ backend_developer_task:
     If the requirements are not clear ask for clarification.
 
   expected_output: >
-    All the C# code generated for this {requirements} should be in a seperate folder as {backend_folder} and 
-    summary of the requirement should be documented in a markdown file as server.md inside {backend_folder}
+    All the C# code generated for this {requirements} should be saved in a folder {backend_folder} and 
+    summary of the requirement should be documented in a markdown file as server.md and saved inside {backend_folder}
   agent: backend_developer
 
 frontend_developer_task:
@@ -17,8 +17,8 @@ frontend_developer_task:
     Keep in mind we are using Angular as our front end framework.
     If the requirements are not clear ask for clarification.
   expected_output: >
-    All the Angular typescript code generated for this {requirements} should be in a seperate folder as {frontend_folder} and 
-    summary of the requirement should be documented in a markdown file as client.md inside {frontend_folder}
+    All the Angular typescript code generated for this {requirements} should be in saved in a folder {frontend_folder} and 
+    summary of the requirement should be documented in a markdown file as client.md and saved inside {frontend_folder}
   agent: frontend_developer
 
 backend_unit_test_developer_task:
@@ -28,6 +28,6 @@ backend_unit_test_developer_task:
     Keep in mind we are using C# as our back end language.
     If the requirements are not clear ask for clarification.
   expected_output: >
-    All the C# code generated for this {requirements} should be in a seperate folder as {backendunit_folder} and 
-    summary of the requirement should be documented in a markdown file as server_tests.md inside {backendunit_folder}
+    All the C# code generated for this {requirements} should be in saved in a folder {backendunit_folder} and 
+    summary of the requirement should be documented in a markdown file as server_tests.md and saved inside {backendunit_folder}
   agent: backend_unit_test_developer
