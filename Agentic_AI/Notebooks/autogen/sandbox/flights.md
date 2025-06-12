@@ -1,14 +1,15 @@
-### Flight Deals from IAH to BLR in June 2025
+1. **Airline**: Multiple Airlines (Delta, Virgin Atlantic, KLM)
+   - **Departure Location**: George Bush Intercontinental Airport (IAH)
+   - **Arrival Location**: Kempegowda International Airport (BLR)
+   - **Price**: $463
+   - **Flight Duration**: 20 hours 30 minutes (with layovers)
+   - **Availability**: In June 2025
+   - **Booking Options**: Available through various travel agents
 
-#### Cheapest One-Way Flight
-- **Price:** $463
-- **Airline:** [Details not provided]
-- **Departure:** IAH (Houston, George Bush Intercontinental Airport)
-- **Arrival:** BLR (Bengaluru, Kempegowda International Airport)
-- **Flight Duration:** 20 hours 30 minutes
-- **Booking Source:** KAYAK
-
-#### Other Notable Deals
-- **Price:** $468
-- **Price:** $478 (one-way)
-- **Round Trip:** Starting at $795
+2. **Airline**: Various (Air France, etc.)
+   - **Departure Location**: Houston (IAH)
+   - **Arrival Location**: Bengaluru (BLR)
+   - **Price**: $478
+   - **Flight Duration**: Not specified
+   - **Availability**: In June 2025
+   - **Booking Options**: Available through various travel agents
