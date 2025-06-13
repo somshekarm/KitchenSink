@@ -11,11 +11,13 @@ warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 backend_folder = 'output/authservice'
 frontend_folder = 'output/authservice_ui'
 backendunit_folder = 'output/authservice_unit_test'
+design_folder = 'output/design'
 connection_string = 'mongodb://localhost:27017/authservice'
 
 os.makedirs(backend_folder, exist_ok=True)
 os.makedirs(frontend_folder, exist_ok=True)
 os.makedirs(backendunit_folder, exist_ok=True)
+os.makedirs(design_folder, exist_ok=True)
 
 requirements = '1. Create a authentication service by collecting users email and password or by using social media login.\
     2. We need to make sure OAuth2 with PKCE challenge is implementded for authentication process as securiity best practice.\
@@ -37,7 +39,8 @@ def run():
         'connection_string': connection_string,
         'backend_folder': backend_folder,
         'frontend_folder': frontend_folder,
-        'backendunit_folder': backendunit_folder       
+        'backendunit_folder': backendunit_folder, 
+        'design_folder' : design_folder      
     }
     
     try:

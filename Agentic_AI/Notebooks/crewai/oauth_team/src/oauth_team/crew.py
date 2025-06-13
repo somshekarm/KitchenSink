@@ -10,12 +10,19 @@ class OauthTeam():
     tasks_config = 'config/tasks.yaml'
     
     @agent
+    def engineering_lead(self) -> Agent:
+        return Agent(
+            config=self.agents_config['engineering_lead'],
+            verbose=True,
+        )
+    
+    @agent
     def backend_developer(self) -> Agent:
         return Agent(
             config=self.agents_config['backend_developer'],
             verbose=True,
             allow_code_execution=True,
-            code_execution_mode='safe',
+            code_execution_mode='safe', # Uses Docker for safety
             max_execution_time=120,
             max_retry_limit=3
         )
@@ -26,7 +33,7 @@ class OauthTeam():
             config=self.agents_config['frontend_developer'],
             verbose=True,
             allow_code_execution=True,
-            code_execution_mode='safe',
+            code_execution_mode='safe', # Uses Docker for safety
             max_execution_time=120,
             max_retry_limit=3
         )
@@ -40,6 +47,12 @@ class OauthTeam():
             code_execution_mode='safe',
             max_execution_time=120,
             max_retry_limit=3
+        )
+        
+    @task
+    def design_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['design_task']
         )
         
     @task

@@ -1,14 +1,25 @@
+design_task:
+  description: >
+    Take the high level requirements described here and prepare a detailed design for the engineer;
+    everything should be in multiple C# module, but outline the classes and methods in the module.
+    Here are the requirements: {requirements}
+    IMPORTANT: Only output the design in markdown format, laying out in detail the classes and functions in the module, describing the functionality.
+  expected_output: >
+    A detailed design for the engineer, identifying the classes and functions in the module should be documented in markdown file as design.md and saved inside {design_folder}.
+  agent: engineering_lead
+
 backend_developer_task:
   description: >
     Provide a detail overview of the requirements and necessary end points required for {requirements}.
     Based on the requirements create as many classes and domain objects and layers as possible.
     Keep in mind we are using MongoDb as our database with connection string {connection_string}.
     If the requirements are not clear ask for clarification.
-
   expected_output: >
-    All the C# code generated for this {requirements} should be saved in a folder {backend_folder} and 
+    All the C# module generated for this {requirements} should be saved in a folder {backend_folder} and 
     summary of the requirement should be documented in a markdown file as server.md and saved inside {backend_folder}
   agent: backend_developer
+  context:
+    - design_task
 
 frontend_developer_task:
   description: >
